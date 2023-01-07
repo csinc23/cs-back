@@ -86,9 +86,10 @@ const getProductsByCategory = async (req, res) => {
 };
 
 const getProductsById = async (req, res) => {
-  const { id } = req.query;
+  // console.log(req);
+  const { id } = req.params;
 
-  console.log("/GET products by category : ", id);
+  console.log("/GET products by id : ", id);
 
   Product.findById(id)
     .then((result) => {

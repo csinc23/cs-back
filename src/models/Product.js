@@ -11,6 +11,7 @@ const Product = new mongoose.Schema(
       name: { type: String, required: false, default: "" },
     },
     price: { type: Number, required: false, default: 0 },
+    oldPrice: { type: Number, required: false, default: 0 },
     stars: { type: Number, required: false, default: 0 },
     sales: { type: Number, required: false, default: 0 },
     discount: { type: Number, required: false, default: 0 },
