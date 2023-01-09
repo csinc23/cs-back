@@ -5,7 +5,7 @@ const Product = new mongoose.Schema(
     name: { type: String, required: false, default: "" },
     pictures: [{ type: String, required: false, default: "" }],
     video: { type: String, required: false, default: "" },
-    category: { type: String, required: false, default: "" },
+    category: { type: String, required: false, default: "Product" },
     owner: {
       id: { type: String, required: false, default: "" },
       name: { type: String, required: false, default: "" },
