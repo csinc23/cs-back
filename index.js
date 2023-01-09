@@ -13,7 +13,7 @@ const authRoute = require("./src/routes/auth");
 const bodyParser = require("body-parser");
 
 mongoose.connect(
-  "mongodb+srv://cosadmininc:mPvxH6aMAR2dBjex@cluster0.omsh1c8.mongodb.net/api?retryWrites=true&w=majority",
+  "mongodb+srv://cosuseracc:AUbBxdO3STgd4GYv@cluster0.omsh1c8.mongodb.net/api?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },
   () => {
     console.log("Connected to MongoDB");
