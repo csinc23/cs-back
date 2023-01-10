@@ -11,9 +11,12 @@ const {
 } = require("./src/routes");
 const authRoute = require("./src/routes/auth");
 const bodyParser = require("body-parser");
+const { join } = require("path");
+const env = require("dotenv");
+env.config({ path: join(__dirname, "..", ".env") });
 
 mongoose.connect(
-  "mongodb+srv://cosuseracc:AUbBxdO3STgd4GYv@cluster0.omsh1c8.mongodb.net/api?retryWrites=true&w=majority",
+  process.env.MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },
   () => {
     console.log("Connected to MongoDB");
